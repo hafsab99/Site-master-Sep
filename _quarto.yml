@@ -1,0 +1,52 @@
+project:
+  type: website
+ output-dir: docs
+website:
+  title: "Site du Master SEP - Université de Reims Champagne-Ardenne"
+  navbar:
+    logo: logo urca.jpg
+    background: secondary
+    Left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - Présentation.qmd #nouvelle page
+      
+  sidebar:
+  - title: "Master SEP"
+    style: "docked"
+    search: true
+    contents:
+      - section: "Présentation"
+        contents:
+          - index.qmd
+          - Modalités.qmd
+          - Débouchés.qmd
+      - section: "Formation"
+        contents:
+          - Organisation.qmd
+          - Enseignements.qmd
+          - Enseignants.qmd
+          - Stage.qmd
+      - section: "Emplois du temps"
+      - section : "Contacts"
+      - section: "Vie étudiante"
+      - section: "On parle de nous"
+      - section: "Ressources"
+    tools: 
+      - icon: linkedin
+        href: https://www.linkedin.com
+      - icon: twitter
+        href: https://twitter.com
+      - icon: github
+        href: https://github.com
+            
+
+format:
+  html:
+    theme: Sandstone
+    css: styles.css
+    toc: true
+
+editor: visual
+
